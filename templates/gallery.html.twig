@@ -41,7 +41,7 @@
 
 <script>
 
-$(window).load(function() {  
+$(window).load(function() {
     var $container = $('#container');
     //Run to initialise column sizes
     updateSize();
@@ -51,7 +51,7 @@ $(window).load(function() {
 
         $container.isotope({
             // options
-            itemSelector : '.element',  
+            itemSelector : '.element',
             layoutMode : 'masonry',
             transformsEnabled: true,
             columnWidth: function( containerWidth ) {
@@ -60,9 +60,9 @@ $(window).load(function() {
             }
         });
     });
-    
+
         // update columnWidth on window resize
-        $(window).smartresize(function(){  
+        $(window).smartresize(function(){
             updateSize();
             $container.isotope( 'reLayout' );
         });
@@ -96,7 +96,7 @@ $(window).load(function() {
         $itemWidth = Math.floor($itemWidth);
 
         $(".element").each(function(index){
-            $(this).css({"width":$itemWidth+"px"});             
+            $(this).css({"width":$itemWidth+"px"});
         });
 
 
@@ -130,7 +130,7 @@ $(window).load(function() {
       }
 
       return false;
-  });       
+  });
 
     };
 
@@ -150,7 +150,7 @@ $(window).load(function() {
 
 {% block content %}
     <div id="content">
-        <div class="row_6">
+        <div class="row_9">
             <div class="container">
                 <h2 class="pad_bot3">{{ page.header.title }}</h2>
                 <div class="row">
